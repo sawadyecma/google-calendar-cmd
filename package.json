@@ -2,10 +2,16 @@
   "name": "google-calendar-cmd",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node ./dist/index.js"
+  },
   "author": "sawadyecma",
   "license": "ISC",
   "devDependencies": {
     "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "ical": "^0.8.0"
   }
 }
