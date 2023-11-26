@@ -6,12 +6,15 @@
     "build": "tsc",
     "start": "tsc && node ./dist/index.js"
   },
+  "type": "module",
   "author": "sawadyecma",
   "license": "ISC",
   "devDependencies": {
+    "@types/ical": "^0.8.3",
     "typescript": "^5.3.2"
   },
   "dependencies": {
+    "dayjs": "^1.11.10",
     "ical": "^0.8.0"
   }
 }
