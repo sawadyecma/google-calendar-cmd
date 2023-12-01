@@ -15,6 +15,6 @@ const totalMins: { month: number; minutes: number }[] = [
 const remainedMinutes =
   24 * 4 * 60 - (totalMins.find((m) => m.month === 11)?.minutes ?? 0);
 
-const whs = filterByMonth(workingHistories, 11);
+const whs = filterByMonth(workingHistories, 12);
 
 new WorkHourReporter().report(whs);
