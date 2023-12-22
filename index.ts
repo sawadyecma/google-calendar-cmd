@@ -10,10 +10,8 @@ const workingHistories = WorkingHistoryBuilder.create(data, "稼働");
 const totalMins: { month: number; minutes: number }[] = [
   { month: 10, minutes: calcTotal(filterByMonth(workingHistories, 10)) },
   { month: 11, minutes: calcTotal(filterByMonth(workingHistories, 11)) },
+  { month: 12, minutes: calcTotal(filterByMonth(workingHistories, 12)) },
 ];
-
-const remainedMinutes =
-  24 * 4 * 60 - (totalMins.find((m) => m.month === 11)?.minutes ?? 0);
 
 const whs = filterByMonth(workingHistories, 12);
 
