@@ -26,7 +26,7 @@ export class WorkHourReporter {
     const totalMin = calcTotal(workingHistory);
     const hour = Math.floor(totalMin / 60);
     const min = totalMin - hour * 60;
-    console.log("合計稼働時間: " + hour + "," + min);
+    console.log("total," + hour + "," + min);
     return;
   }
 }
